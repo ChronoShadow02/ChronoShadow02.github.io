@@ -20,7 +20,7 @@
 <h2 align="center">Proyectos</h2>
 <ul>
     <li><h3>Sistema de costeos de importación</h3></li>
-          ![image](https://user-images.githubusercontent.com/67162636/122864906-b40b1880-d2e2-11eb-9bd3-d6b4728f7454.png)
+          <a href="https://ibb.co/Pj8TLH2"><img src="https://i.ibb.co/fF78gw3/1.png" alt="1" border="0"></a>
 
 
 </ul>     
