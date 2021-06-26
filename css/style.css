@@ -26,7 +26,10 @@ h2{
 font-size: 28px;
 }
 .wrapper{
-    background-color: rgba(255, 255, 255, 0.05);
+    /*background: #de6161; /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #de6161, #2657eb); /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #de6161, #2657eb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: rgba(255, 255,255, .15);
 }
 header{
     width: 100%;
@@ -34,6 +37,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+section{
+    clear: both;
 }
 /*Menú*/
 nav{
@@ -43,6 +49,27 @@ nav{
 p{
     font-size: 17px;
     padding: 5px;
+}
+/*Barra de progreso*/
+progress::-moz-progress-bar {
+    border-radius: 100%;
+
+}
+progress::-moz-progress-bar {
+    border-radius: 10px;
+
+}
+  
+progress::-webkit-progress-value {
+    border-radius: 10px;
+    background: #1c92d2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+  
+progress::-webkit-progress-bar {
+    border-radius: 10px;
 }
 /*Cambios específicos*/
 
@@ -55,7 +82,6 @@ ul.menu{
 }
 nav ul li{
     list-style: none;
-    
 }
 ul.menu li a{
     text-decoration: none;
@@ -67,9 +93,64 @@ ul.menu li a{
 }
 ul.menu li a:hover{
     color: lightgrey;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: .65s
 }
 /*Sobre mi*/
-.sobremi,.lenguajes{
+.sobremi{
+    width: 500px;
+    height: 550px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0 ,.4);
+}
+.sobremi,.lenguajes,.trabajos{
     padding: 1.3em;
+    clear: both;
+}
+.sobremi h2{
+    text-align: center;
+}
+.textosobremi{
+    text-align: justify;
+}
+/*Tarjetas de los lenguajes*/
+.tarjeta-lenguaje{
+    width: 225px;
+    height: 225px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0 ,.4);
+    margin: 45px;
+    padding: 15px;
+    box-shadow: 1px 1px 1px;
+}
+.texto-lenguaje{
+    clear: both;
+    font-size: 1.5em;
+}
+.titulo-lenguaje{
+    font-size: xx-large;
+    text-align: center;
+    height: 50px;
+}
+.porcentaje{
+    margin-top: 30px;
+}
+.imgsistemacosteo{
+    width: 100%;
+}.imgAngel{
+    height: 400px;
+    width: 300px;
+}
+.proyecto{
+    margin: 50px 0;
+}
+.contacto{
+    width: 100%;
+    background-color: rgba(0, 0, 0 ,.4);
+}
+.contacto h2,.correo{
+    text-align: center;
+    color: white;
+}
+p.correo {
+    text-decoration: none;
 }
